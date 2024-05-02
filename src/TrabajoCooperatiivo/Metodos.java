@@ -2,7 +2,7 @@ package TrabajoCooperatiivo;
 
 import java.util.Scanner;
 
-public class Metodos {
+public static class Metodos {
 	/**
      * Validacion de numero limitando un rango de numeros
      * @param vMin Valor minimo del numero
