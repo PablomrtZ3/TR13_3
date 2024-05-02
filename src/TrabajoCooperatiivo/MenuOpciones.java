@@ -1,4 +1,4 @@
-package TrabajoCooperatiivo;
+package src.TrabajoCooperatiivo;
 
 public class MenuOpciones {
 	/**
@@ -102,7 +102,7 @@ public class MenuOpciones {
                 }
                 case 14 -> {
                     //NICO 2 MASTER
-                    Metodos.calcularMCD();
+                    Metodos.calcularMCD(false);
                     break;
                 }
                 case 15 -> {

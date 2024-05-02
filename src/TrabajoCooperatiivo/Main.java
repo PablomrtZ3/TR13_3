@@ -1,4 +1,4 @@
-package TrabajoCooperatiivo;
+package src.TrabajoCooperatiivo;
 /**
  * Mostramos un menu con distintas opciones, resuelven problemas matematicos
  * @author Clase_DAM1D
