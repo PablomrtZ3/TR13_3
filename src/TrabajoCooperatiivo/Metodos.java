@@ -123,4 +123,24 @@ public class Metodos {
             System.out.println("El numero "+numero+" no es primo ya que es divisible al menos por "+divisor);
         }
     }
+    /**
+     * @author Nicolás Román Teixeira
+     * @since 02/05/2024
+     * Permite calcular los MCD de un numero dado, indicando cuales de los posibles
+     * numeros son MCD o no
+     * @see entradaValoresNumericosMin
+     */
+    public static void calcularMCD() {
+    	int numero = entradaValoresNumericosMin(1);
+    	int limBucle = numero/2;
+    	int resRedondeado = 0;
+    	for(int i = 1; i<limBucle; i++) {
+    		if(numero%i != 0) {
+    			resRedondeado = (numero/i) - (numero%i);
+    			System.out.println("el numero "+i+" y el numero " + resRedondeado+" no son MCD de "+numero);
+    		}else {
+    			System.out.println("el numero "+i+" y el numero " + resRedondeado+" son MCD de "+numero);
+    		}
+    	}
+    }
 }
