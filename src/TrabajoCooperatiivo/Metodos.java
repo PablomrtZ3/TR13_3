@@ -100,4 +100,27 @@ public class Metodos {
             } while (!valorCorrecto);
         return opcion;
     }
+    /**
+     * Verificamos si el numero que introducimos es un numero primo
+     */
+    public static void verificarNumeroPrimo(){
+        int numero=0,divisor = 0;
+        boolean primo=true;
+        System.out.println("VERIFICACION DE NUMERO PRIMO");
+        numero = entradaValoresNumericosMin(1);
+        for (int i = numero-1; i > 0; i--) {
+            if (i!=1) {
+                if ((numero%i)==0) {
+                    primo=false;
+                    divisor = i;
+                    i=0;
+                }
+            }
+        }
+        if (primo) {
+            System.out.println("El numero "+numero+" es primo");
+        }else{
+            System.out.println("El numero "+numero+" no es primo ya que es divisible al menos por "+divisor);
+        }
+    }
 }

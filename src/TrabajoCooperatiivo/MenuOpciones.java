@@ -92,7 +92,7 @@ public class MenuOpciones {
                 }
                 case 12 -> {
                     //PABLO 1 MASTER
-                	//Metodos.verificarNumeroPrimo();
+                	Metodos.verificarNumeroPrimo();
                     break;
                 }
                 case 13 -> {
