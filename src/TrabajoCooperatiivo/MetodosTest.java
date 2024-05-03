@@ -57,7 +57,17 @@ class MetodosTest {
 
 	@Test
 	void testCalcularMCM() {
-		fail("Not yet implemented");
+		//Caso de prueba 1: num1 > num2		
+        int resultado1 = Metodos.calcularMCM(12, 8);
+        assertEquals(24, resultado1, "El MCM de 12 y 6 debería ser 24");
+
+        // Caso de prueba 2: num2 > num1
+        int resultado2 = Metodos.calcularMCM(10, 15);
+        assertEquals(30, resultado2, "El MCM de 15 y 10 debería ser 30");
+
+        // Caso de prueba 3: num1 == num2
+        int resultado3 = Metodos.calcularMCM(9, 9);
+        assertEquals(9, resultado3, "El MCM de 9 y 9 debería ser 9");
 	}
 
 	@Test

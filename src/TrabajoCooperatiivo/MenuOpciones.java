@@ -99,7 +99,7 @@ public class MenuOpciones {
                 }
                 case 13 -> {
                     //FRANCISCO
-                    //calcularMCM();
+                    Metodos.calcularMCM(Metodos.entradaValoresNumericosMin(1), Metodos.entradaValoresNumericosMin(1));               
                     break;
                 }
                 case 14 -> {

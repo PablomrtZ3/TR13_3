@@ -159,8 +159,30 @@ public class Metodos {
             System.out.println("El numero "+numero+" no es primo ya que es divisible al menos por "+divisor);
         }
     }
-    public static void calcularMCM(){
-    	fail("Not yet implemented");
+    /**
+     * Calcula el MCM utilizando el cociente del producto de ambos valores por su MCD.
+     * @author Francisco Sierra Ares
+     * @since 03/05/2024
+     * @param num1 Valor 1
+     * @param num2 Valor 2
+     * 
+     * @see Metodos#calcularMCD(int, int, boolean)
+     * @return El mínimo común múltiplo de ambos números
+     */
+    public static int calcularMCM(int num1, int num2){
+    	int mcm = 0;
+		try {
+			int mcd = calcularMCD(num1, num2, true);
+			mcm = (num1*num2)/mcd;
+			
+			String mensaje = String.format("El MCM de %d y %d es %d", num1, num2, mcm);
+			System.out.println(mensaje);
+			
+		} catch (Exception e) {			
+			System.out.println("Error inesperado");
+		}
+    	
+        return mcm;
     }
     /**
      * @author Nicolás Román Teixeira
@@ -179,7 +201,7 @@ public class Metodos {
 		num2 = intro2;
     	
     	int resultado = 0;
-    	System.out.println(num1 + num2);
+    	
     	try {
     	if(num2>num1) {
         	do {
@@ -192,7 +214,7 @@ public class Metodos {
         		resultado = num1;
         		num1 = num2%num1;
         		num2 = resultado;
-        	}while(num2 != 0);
+        	}while(num1 != 0);
     	}
     	}catch(ArithmeticException ex) {
     		System.out.println("Error inesperado (MCD)");
