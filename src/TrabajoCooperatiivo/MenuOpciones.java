@@ -102,7 +102,7 @@ public class MenuOpciones {
                 }
                 case 14 -> {
                     //NICO 2 MASTER
-                    Metodos.calcularMCD(false);
+                    Metodos.calcularMCD(Metodos.entradaValoresNumericosMin(1),Metodos.entradaValoresNumericosMin(1),false);
                     break;
                 }
                 case 15 -> {

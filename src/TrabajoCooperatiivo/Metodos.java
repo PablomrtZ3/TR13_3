@@ -1,5 +1,7 @@
 package src.TrabajoCooperatiivo;
 
+import static org.junit.jupiter.api.Assertions.fail;
+
 import java.util.Scanner;
 
 public class Metodos {
@@ -103,6 +105,33 @@ public class Metodos {
     /**
      * Verificamos si el numero que introducimos es un numero primo
      */
+    public static void realizarSuma(){
+    	fail("Not yet implemented");
+    }
+    public static void realizarResta(){
+    	fail("Not yet implemented");
+    }
+    public static void realizarMultiplicacion(){
+    	fail("Not yet implemented");
+    }
+    public static void realizarDivision(){
+    	fail("Not yet implemented");
+    }
+    public static void calcularAreaTriangulo(){
+    	fail("Not yet implemented");
+    }
+    public static void calcularFactorial(){
+    	fail("Not yet implemented");
+    }
+    public static void calcularPotencia(){
+    	fail("Not yet implemented");
+    }
+    public static void calcularRaizCuadrada(){
+    	fail("Not yet implemented");
+    }
+    public static void calcularValorAbsoluto(){
+    	fail("Not yet implemented");
+    }
     public static void verificarNumeroPrimo(){
         int numero=0,divisor = 0;
         boolean primo=true;
@@ -123,6 +152,9 @@ public class Metodos {
             System.out.println("El numero "+numero+" no es primo ya que es divisible al menos por "+divisor);
         }
     }
+    public static void calcularMCM(){
+    	fail("Not yet implemented");
+    }
     /**
      * @author Nicolás Román Teixeira
      * @param ajuste ajuste de silenciado del metodo
@@ -132,15 +164,12 @@ public class Metodos {
      * numeros son MCD o no
      * @see entradaValoresNumericosMin
      */
-    public static int calcularMCD(boolean ajuste) {
+    public static int calcularMCD(int intro1, int intro2, boolean ajuste) {
     	boolean silencia = false;
     	silencia = ajuste;
 		int num1, num2;
-		Scanner teclado = new Scanner(System.in);
-    	System.out.println("Introduzca el primer numero");
-    	num1 = entradaValoresNumericosMin(1);
-    	System.out.println("Introduzca el segundo numero");
-    	num2 = entradaValoresNumericosMin(1);
+		num1 = intro1;
+		num2 = intro2;
     	
     	int resultado = 0;
     	System.out.println(num1 + num2);
@@ -166,5 +195,20 @@ public class Metodos {
     	}
     	return resultado;
 	}
+    public static void convertirCelsiusAFahrenheit(){
+    	fail("Not yet implemented");
+    }
+    public static void convertirFahrenheitACelsius(){
+    	fail("Not yet implemented");
+    }
+    public static void secuenciaFibonacci(){
+    	fail("Not yet implemented");
+    }
+    public static void conversorEurosDolares(){
+    	fail("Not yet implemented");
+    }
+    public static void conversorEurosLibras(){
+    	fail("Not yet implemented");
+    }
 }
 
