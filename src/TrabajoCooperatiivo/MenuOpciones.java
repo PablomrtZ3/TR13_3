@@ -2,7 +2,9 @@ package src.TrabajoCooperatiivo;
 
 public class MenuOpciones {
 	/**
+ 	 * @author Pablomrt
 	 * Menu de opciones que contiene los diferentes metodos que puede ejecutar nuestro programa
+         * @see entradaValoresNumericos
 	 */
 	public static void Menu() {
         int opcion;
