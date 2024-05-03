@@ -5,7 +5,8 @@ import static org.junit.jupiter.api.Assertions.fail;
 import java.util.Scanner;
 
 public class Metodos {
-	/**
+    /**
+     * @author Pablomrt
      * Validacion de numero limitando un rango de numeros
      * @param vMin Valor minimo del numero
      * @param vMax Valor maximo del numero
@@ -33,6 +34,7 @@ public class Metodos {
     }
 
     /**
+     * @author Pablomrt
      * Validacion de numero con limitante de valor maximo
      * @param vMax Valor maximo del numero
      * @return el numero valido
@@ -58,6 +60,7 @@ public class Metodos {
         return opcion;
     }
     /**
+     * @author Pablomrt
      * Validacion de numero con limitande de valor minimo
      * @param vMin Valor minimo del numero
      * @return el numero valido
@@ -83,6 +86,7 @@ public class Metodos {
         return opcion;
     }
     /**
+     * @author Pablomrt
      * Validacion de numero sin limitacion del valor del mismo
      * @return el numero valido
      */
@@ -103,7 +107,10 @@ public class Metodos {
         return opcion;
     }
     /**
+     * @author Pablomrt
+     * @since 30/04/2024
      * Verificamos si el numero que introducimos es un numero primo
+     * @see entradaValoresNumericosMin
      */
     public static void realizarSuma(){
     	fail("Not yet implemented");
