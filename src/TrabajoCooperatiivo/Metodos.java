@@ -106,12 +106,6 @@ public class Metodos {
             } while (!valorCorrecto);
         return opcion;
     }
-    /**
-     * @author Pablomrt
-     * @since 30/04/2024
-     * Verificamos si el numero que introducimos es un numero primo
-     * @see entradaValoresNumericosMin
-     */
     public static void realizarSuma(){
     	fail("Not yet implemented");
     }
@@ -158,6 +152,12 @@ public class Metodos {
     public static void calcularValorAbsoluto(){
     	fail("Not yet implemented");
     }
+    /**
+     * @author Pablomrt
+     * @since 30/04/2024
+     * Verificamos si el numero que introducimos es un numero primo
+     * @see entradaValoresNumericosMin
+     */
     public static void verificarNumeroPrimo(){
         int numero=0,divisor = 0;
         boolean primo=true;
