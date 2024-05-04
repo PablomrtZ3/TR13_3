@@ -265,16 +265,17 @@ public class Metodos {
      * @author chris
      * @param num Valor1
      * @param num2 Resultado
+     * @since 04/05/2024
      */
     public static void convertirFahrenheitACelsius(){
     	boolean salida = true;
 
         do {
             try {
-                
+                Scanner teclado = new Scanner(System.in);
                 System.out.println("Escriba un número en grados Fahrenheit para pasarlo a Celsius");
 
-                double num=0;
+                double num = teclado.nextDouble();
 
                 double num2 = (num - 32) * 5 / 9; 
 
@@ -284,7 +285,7 @@ public class Metodos {
                 
                 System.out.println("¿Desea cambiar otro número? (Escriba 1 para continuar, 2 para terminar)");
 
-                int opcion = 0;
+                int opcion = teclado.nextInt();
 
                 if (opcion == 2) {
                     System.out.println("¡Muchas gracias por su tiempo! ¡Vuelva pronto!");
@@ -293,7 +294,9 @@ public class Metodos {
             } catch (Exception e) {
                 
                 System.out.println("Solo se permiten números");
-            } 
+            } finally {
+            	teclado.close();
+            }
         } while (salida);
  	
     }
