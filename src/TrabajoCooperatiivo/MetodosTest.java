@@ -32,7 +32,9 @@ class MetodosTest {
 
 	@Test
 	void testCalcularFactorial() {
-		fail("Not yet implemented");
+		int valor_esperado=120;
+		int resultado = Metodos.calcularFactorial(5);
+		assertEquals(valor_esperado, resultado, "El factorial de 5 debería ser 120, ya que 120 = 5x4x3x2x1");
 	}
 
 	@Test

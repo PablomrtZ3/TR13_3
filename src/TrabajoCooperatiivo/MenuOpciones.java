@@ -74,7 +74,7 @@ public class MenuOpciones {
                 }
                 case 8 -> {
                     //ASIER
-                    //calcularFactorial();
+                	Metodos.calcularFactorial(Metodos.entradaValoresNumericosMin(1));
                     break;
                 }
                 case 9 -> {

@@ -127,8 +127,27 @@ public class Metodos {
     public static void calcularAreaTriangulo(){
     	fail("Not yet implemented");
     }
-    public static void calcularFactorial(){
-    	fail("Not yet implemented");
+    
+    /**
+	 * @author Asier Rodríguez Lamas
+	 * @since 04/05/2024
+	 * @param num Recibe como parámetro un valor de tipo entero
+	 * @return El número factorial del número que le pasamos como parámetro.
+	 */
+    public static int calcularFactorial(int num){
+    	
+    	int factorial=1;
+        
+        for(int i = 1; i<=num; i++){
+            
+            factorial=factorial*i;
+            
+        }
+        
+        System.out.println("El factorial de " + num + " es " + factorial);
+        
+        return factorial;
+    	
     }
     public static void calcularPotencia(){
     	fail("Not yet implemented");
