@@ -44,7 +44,11 @@ class MetodosTest {
 
 	@Test
 	void testCalcularRaizCuadrada() {
-		fail("Not yet implemented");
+		double valorEsperado = 9;
+		double resultado = Metodos.calcularRaizCuadrada(81);
+		
+		assertEquals(valorEsperado,resultado,"La raiz cuadrada de 81 deberia ser 9");
+		
 	}
 
 	@Test

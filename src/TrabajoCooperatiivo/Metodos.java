@@ -146,8 +146,21 @@ public class Metodos {
     public static void calcularPotencia(){
     	fail("Not yet implemented");
     }
-    public static void calcularRaizCuadrada(){
-    	fail("Not yet implemented");
+    /**
+     * @author Noé Suárez Rodríguez
+     * @since 04/05/2024
+     * @param num Recibe como parametro el numero entero del que se desea hallar la raiz cuadrada
+     * @return Devuelve un double de la solucion de la raiz
+     */
+    
+    public static double calcularRaizCuadrada(int num){
+    	
+    	double raizCuadrada = Math.sqrt(num);
+    	
+    	System.out.println("La raiz cuadrada de " + num + " es " + raizCuadrada);
+    	
+    	return raizCuadrada;
+    	
     }
     public static void calcularValorAbsoluto(){
     	fail("Not yet implemented");

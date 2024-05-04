@@ -84,7 +84,7 @@ public class MenuOpciones {
                 }
                 case 10 -> {
                     //NOE
-                    //calcularRaizCuadrada();
+                    Metodos.calcularRaizCuadrada(Metodos.entradaValoresNumericos());
                     break;
                 }
                 case 11 -> {
