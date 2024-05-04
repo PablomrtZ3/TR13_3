@@ -99,7 +99,15 @@ class MetodosTest {
 
 	@Test
 	void testConvertirFahrenheitACelsius() {
-		fail("Not yet implemented");
+		//caso prueba1
+		double resultado = Metodos.convertirFahrenheitACelsius(32);
+		assertEquals(0, resultado, "32ºFahrenheit al pasarlo a ºCelsius deberia ser 0ºc");
+		//caso prueba2
+		double resultado2 = Metodos.convertirFahrenheitACelsius(-4);
+		assertEquals(-20, resultado2, "-4ºFahrenheit al pasarlo a ºCelsius deberian ser -20.0ºc");
+		//caso prueba2
+		double resultado3 = Metodos.convertirFahrenheitACelsius(-65,447);
+		assertEquals(-54.13722, resultado3, "-65,447ºFahrenheit al pasarlo a ºCelsius deberian ser -54.13722ºc");
 	}
 
 	@Test

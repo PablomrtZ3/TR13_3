@@ -113,8 +113,8 @@ public class MenuOpciones {
                     break;
                 }
                 case 16 -> {
-                    //CRISTIAN
-                    //convertirFahrenheitACelsius();
+                    //CHRISTIAN
+                    Metodos.convertirFahrenheitACelsius();
                     break;
                 }
                 case 17 -> {

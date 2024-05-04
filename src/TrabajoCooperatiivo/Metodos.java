@@ -259,8 +259,43 @@ public class Metodos {
     public static void convertirCelsiusAFahrenheit(){
     	fail("Not yet implemented");
     }
+    /**
+     * Método que convierte temperaturas de grados Fahrenheit a grados Celsius.
+     * Después de cada conversión, el programa pregunta al usuario si desea realizar otra conversión o salir del programa.
+     * @author chris
+     * @param num Valor1
+     * @param num2 Resultado
+     */
     public static void convertirFahrenheitACelsius(){
-    	fail("Not yet implemented");
+    	boolean salida = true;
+
+        do {
+            try {
+                
+                System.out.println("Escriba un número en grados Fahrenheit para pasarlo a Celsius");
+
+                double num=0;
+
+                double num2 = (num - 32) * 5 / 9; 
+
+                
+                System.out.println(num + "ºF equivalen a : " + num2 + "ºC");
+
+                
+                System.out.println("¿Desea cambiar otro número? (Escriba 1 para continuar, 2 para terminar)");
+
+                int opcion = 0;
+
+                if (opcion == 2) {
+                    System.out.println("¡Muchas gracias por su tiempo! ¡Vuelva pronto!");
+                    salida = false; 
+                }
+            } catch (Exception e) {
+                
+                System.out.println("Solo se permiten números");
+            } 
+        } while (salida);
+ 	
     }
     public static void secuenciaFibonacci(){
     	fail("Not yet implemented");
