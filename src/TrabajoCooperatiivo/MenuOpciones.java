@@ -1,6 +1,11 @@
 package src.TrabajoCooperatiivo;
 
+import java.util.Scanner;
+
 public class MenuOpciones {
+	
+	Scanner teclado = new Scanner(System.in);
+	
 	/**
  	 * @author Pablomrt
 	 * Menu de opciones que contiene los diferentes metodos que puede ejecutar nuestro programa
@@ -114,7 +119,8 @@ public class MenuOpciones {
                 }
                 case 16 -> {
                     //CHRISTIAN
-                    Metodos.convertirFahrenheitACelsius();
+                	System.out.println("Escriba un número en grados Fahrenheit para pasarlo a Celsius");
+                    Metodos.convertirFahrenheitACelsius(teclado.nextDouble());
                     break;
                 }
                 case 17 -> {

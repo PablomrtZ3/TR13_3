@@ -294,8 +294,6 @@ public class Metodos {
             } catch (Exception e) {
                 
                 System.out.println("Solo se permiten números");
-            } finally {
-            	teclado.close();
             }
         } while (salida);
  	
