@@ -267,17 +267,18 @@ public class Metodos {
      * @param num2 Resultado
      * @since 04/05/2024
      */
-    public static void convertirFahrenheitACelsius(){
+    public static double convertirFahrenheitACelsius(double entrada){
     	boolean salida = true;
-
+    	double num;
+    	double num2 = 0;
         do {
             try {
                 Scanner teclado = new Scanner(System.in);
-                System.out.println("Escriba un número en grados Fahrenheit para pasarlo a Celsius");
+                
 
-                double num = teclado.nextDouble();
+                 num = entrada;
 
-                double num2 = (num - 32) * 5 / 9; 
+                 num2 = (num - 32) * 5 / 9; 
 
                 
                 System.out.println(num + "ºF equivalen a : " + num2 + "ºC");
@@ -296,7 +297,7 @@ public class Metodos {
                 System.out.println("Solo se permiten números");
             }
         } while (salida);
- 	
+        return num2;
     }
     
     /**
