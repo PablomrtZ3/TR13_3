@@ -265,16 +265,17 @@ public class Metodos {
      * @author chris
      * @param num Valor1
      * @param num2 Resultado
+     * @since 04/05/2024
      */
     public static void convertirFahrenheitACelsius(){
     	boolean salida = true;
 
         do {
             try {
-                
+                Scanner teclado = new Scanner(System.in);
                 System.out.println("Escriba un número en grados Fahrenheit para pasarlo a Celsius");
 
-                double num=0;
+                double num = teclado.nextDouble();
 
                 double num2 = (num - 32) * 5 / 9; 
 
@@ -284,7 +285,7 @@ public class Metodos {
                 
                 System.out.println("¿Desea cambiar otro número? (Escriba 1 para continuar, 2 para terminar)");
 
-                int opcion = 0;
+                int opcion = teclado.nextInt();
 
                 if (opcion == 2) {
                     System.out.println("¡Muchas gracias por su tiempo! ¡Vuelva pronto!");
@@ -293,13 +294,57 @@ public class Metodos {
             } catch (Exception e) {
                 
                 System.out.println("Solo se permiten números");
-            } 
+            } finally {
+            	teclado.close();
+            }
         } while (salida);
  	
     }
-    public static void secuenciaFibonacci(){
-    	fail("Not yet implemented");
-    }
+    
+    /**
+	 * @author Iván Gulín Alonso
+	 * @since 06/05/2024
+	 * @param posicion - número introducido por el usuario que representa la posición de un número en la secuencia de fibonacci
+	 * @return El valor numérico de la posición de fibonacci elegida previamente por el usuario.
+	 */
+	public static long secuenciaFibonacci(int posicion)
+	{
+		long anterior = 0;
+		long actual = 1;
+
+		// Comprobación de que la entrada sea 0, en ese caso retornará el valor 0 que es el valor de dicha posición.
+		if (posicion <= 0) 
+		{
+            System.out.println("Fibonacci: " + anterior);
+            return anterior;
+        } 
+		
+		// En caso de que la posición introducida sea la 1 entonces se devuelve el valor 1.
+		else if (posicion == 1) 
+		{
+            System.out.println("Fibonacci: " + actual);
+            return actual;
+        } 
+		
+		// Si la entrada no es ni el 0 ni el 1 entonces pasa al siguiente else.
+		else 
+		{
+			// En este bucle se recorrerá cada posición de la secuencia de fibonacci.
+			// Empezando desde la tercera posición (i = 2) ya que esas primeras posiciones ya estan comprobadas en los if.
+			// Y dentro de cada iteracion calculamos el valor de fibonacci en esta iteracion y lo almacenamos en siguiente,
+			// a anterior le damos el valor que contenga la variable actual y a "actual" le damos el valor de "siguiente".
+			// De esta manera calculamos el valor de fibonacci ya que se calcula sumando el valor de la posicion en la que estemos con su valor anterior.
+            for (int i = 2; i <= posicion; i++) 
+            {
+                long siguiente = anterior + actual;
+                anterior = actual;
+                actual = siguiente;
+            }
+            System.out.println("Fibonacci: " + actual);
+        }
+		return actual;
+	}
+	
     public static void conversorEurosDolares(){
     	fail("Not yet implemented");
     }

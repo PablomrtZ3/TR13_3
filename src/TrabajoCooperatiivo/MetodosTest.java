@@ -4,6 +4,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+import src.Fibonacci;
+
 class MetodosTest {
 	@Test
 	void testRealizarSuma() {
@@ -112,7 +114,42 @@ class MetodosTest {
 
 	@Test
 	void testSecuenciaFibonacci() {
-		fail("Not yet implemented");
+		// Se comprobarán los valores esperados de 0, 1 por separado debido a que son entradas que pasan solo por estructuras
+		// de if y retornan el valor supuesto, entonces probamos cada una de sus entradas y después comprobamos las entradas por bucle.
+		// Prueba de cuando se introduzca la posición 0 de fibonacci.
+		long valorEsperado = 0;
+		long valor = Metodos.secuenciaFibonacci(0);
+		assertEquals(valorEsperado, valor, "El valor de fibonacci en la posición 0 deberia ser: " + valorEsperado);
+		
+		// Prueba de cuando se introduzca la posición 1 de fibonacci.
+		valorEsperado = 1;
+		valor = Metodos.secuenciaFibonacci(1);
+		assertEquals(valorEsperado, valor, "El valor de fibonacci en la posición 1 deberia ser: " + valorEsperado);
+		
+		// Prueba de cuando se introduzca la posición 2 de fibonacci. A partir de aqui serán resultados del bucle. (Primer valor devuelto por el bucle)
+		valorEsperado = 1;
+		valor = Metodos.secuenciaFibonacci(2);
+		assertEquals(valorEsperado, valor, "El valor de fibonacci en la posición 2 deberia ser: " + valorEsperado);
+		
+		// Prueba de cuando se introduzca la posición 3 de fibonacci.
+		valorEsperado = 2;
+		valor = Metodos.secuenciaFibonacci(3);
+		assertEquals(valorEsperado, valor, "El valor de fibonacci en la posición 3 deberia ser: " + valorEsperado);
+
+		// Prueba de cuando se introduzca la posición 16 de fibonacci. (valor aleatorio devuelto por el bucle)
+		valorEsperado = 987;
+		valor = Metodos.secuenciaFibonacci(16);
+		assertEquals(valorEsperado, valor, "El valor de fibonacci en la posición 16 deberia ser: " + valorEsperado);
+		
+		// Prueba de cuando se introduzca una posición fuera de los rangos por debajo de fibonacci, es decir por debajo de 0. 
+		valorEsperado = 0;
+		valor = Metodos.secuenciaFibonacci(-1);
+		assertEquals(valorEsperado, valor, "El valor de fibonacci en la posición -1 deberia ser: " + valorEsperado);
+		
+		// Prueba de cuando se introduzca una posición muy alta. Se aplica la 'L' al final del número para obligar a almacenar el tipo long.
+		valorEsperado = 12586269025L;
+		valor = Metodos.secuenciaFibonacci(50);
+		assertEquals(valorEsperado, valor, "El valor de fibonacci en la posición 50 deberia ser: " + valorEsperado);
 	}
 
 	@Test

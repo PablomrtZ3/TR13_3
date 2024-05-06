@@ -119,7 +119,7 @@ public class MenuOpciones {
                 }
                 case 17 -> {
                     //GULIN
-                    //secuenciaFibonacci();
+                    Metodos.secuenciaFibonacci(Metodos.entradaValoresNumericosMax(50));
                     break;
                 }
                 case 18 -> {
