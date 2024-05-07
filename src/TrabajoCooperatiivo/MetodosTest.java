@@ -15,7 +15,25 @@ class MetodosTest {
 	void testRealizarResta() {
 		fail("Not yet implemented");
 	}
-
+	
+	@Test
+	void testareaTriangulo() {
+		 // Definir los valores de prueba
+	    double base = 5.0;
+	    double altura = 4.0;
+	    
+	    // Crear una instancia del objeto que contiene el método que quieres probar
+	    AreaCalculator calculator = new AreaCalculator();
+	    
+	    // Llamar al método que quieres probar
+	    double resultado = calculator.area(base, altura);
+	    
+	    // Verificar el resultado esperado
+	    double resultadoEsperado = base * altura;
+	    assertEquals(resultadoEsperado, resultado, 0.001); 
+	    }
+	
+	
 	@Test
 	void testRealizarMultiplicacion() {
 		int valor_esperado = 6;

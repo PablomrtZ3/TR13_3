@@ -219,6 +219,17 @@ public class Metodos {
     	
     }
     /**
+     * @author claudia gonzalez
+     * @param base se pasa por parametro la base del rectangulo
+     * @param altura se pasa por parametro la altura del rectangulo
+     * @return devuelve el area del rectangulo
+     */
+	public double calcularAreaRectangulo(double base , double altura) {
+		double area=base*altura;
+		return area;
+	}
+
+    /**
     * @author Roberto Morilla Buitrago
     * @since 7/05/2023
     * @param base Recibe un primer número que da el usuario y lo pasa por parámetro
