@@ -114,7 +114,7 @@ public class MenuOpciones {
                 }
                 case 15 -> {
                     //MOISES
-                    //convertirCelsiusAFahrenheit();
+                   Metodos.convertirCelsiusAFahrenheit();
                     break;
                 }
                 case 16 -> {

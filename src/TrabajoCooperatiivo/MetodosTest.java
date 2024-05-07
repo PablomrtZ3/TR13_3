@@ -104,7 +104,17 @@ class MetodosTest {
 
 	@Test
 	void testConvertirCelsiusAFahrenheit() {
-		fail("Not yet implemented");
+		// Prueba con 0 grados Celsius
+		double gradosCelsius = 0;
+		double expectedFahrenheit = 32;
+		double actualFahrenheit = (gradosCelsius * 9 / 5) + 32;
+		assertEquals(expectedFahrenheit, actualFahrenheit, 0.001, "Error en la conversión de Celsius a Fahrenheit");
+
+		// Prueba con 100 grados Celsius
+		gradosCelsius = 100;
+		expectedFahrenheit = 212;
+		actualFahrenheit = (gradosCelsius * 9 / 5) + 32;
+		assertEquals(expectedFahrenheit, actualFahrenheit, 0.001, "Error en la conversión de Celsius a Fahrenheit");
 	}
 
 	@Test

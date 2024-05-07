@@ -352,8 +352,21 @@ public class Metodos {
     	}
     	return resultado;
 	}
+    /**
+     * Método que convierte temperaturas de grados  Celsius a gradosFahrenheit.
+     * @author Moisés Ourens
+     * @param Grados celsius 
+     * @since 06/05/2024
+     */
     public static void convertirCelsiusAFahrenheit(){
-    	fail("Not yet implemented");
+    	   Scanner scanner = new Scanner(System.in);
+
+           // Pedimos que introduzca los grados a convertir
+           System.out.print("Introduce los grados Celsius: ");
+           double gradosCelsius = scanner.nextDouble();
+           double gradosFahrenheit = (gradosCelsius * 9 / 5) + 32;
+
+           System.out.println(gradosCelsius + " grados Celsius son equivalentes a " + gradosFahrenheit + " grados Fahrenheit.");
     }
     /**
      * Método que convierte temperaturas de grados Fahrenheit a grados Celsius.
