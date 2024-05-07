@@ -106,6 +106,27 @@ public class Metodos {
             } while (!valorCorrecto);
         return opcion;
     }
+    /**
+     * @author Pablomrt
+     * Validacion de numero sin limitacion del valor del mismo
+     * @return el numero valido
+     */
+    public static double entradaValoresNumericosDouble(){
+        double opcion=0;
+        boolean valorCorrecto=true;
+        do {
+                Scanner teclado = new Scanner(System.in);
+                try {
+                    System.out.print("Numero: ");
+                    opcion = teclado.nextDouble();
+                    valorCorrecto = true;
+                } catch (Exception e) {
+                    System.out.println("Valor fuera del rango de opciones.");
+                    valorCorrecto = false;
+                }
+            } while (!valorCorrecto);
+        return opcion;
+    }
     public static void realizarSuma(){
     	fail("Not yet implemented");
     }
