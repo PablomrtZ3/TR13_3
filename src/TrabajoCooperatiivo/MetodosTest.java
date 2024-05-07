@@ -153,7 +153,14 @@ class MetodosTest {
 
 	@Test
 	void testConversorEurosDolares() {
-		fail("Not yet implemented");
+		double valorEsperado = 10.80;
+		double valor = Metodos.conversorEurosDolares(1);
+		assertEquals(valorEsperado, valor, "El valor de La conversion deberia ser" + valorEsperado);
+		
+		valorEsperado = 9.20;
+		valor = Metodos.conversorEurosDolares(1);
+		assertEquals(valorEsperado, valor, "El valor de La conversion deberia ser" + valorEsperado);
+		
 	}
 
 	@Test

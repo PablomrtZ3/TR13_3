@@ -128,8 +128,8 @@ public class MenuOpciones {
                     break;
                 }
                 case 18 -> {
-                    //SERGIO
-                    //conversorEurosDolares();
+                	 
+                    Metodos.conversorEurosDolares(Metodos.entradaValoresNumericos());
                     break;
                 }
                 case 19 -> {

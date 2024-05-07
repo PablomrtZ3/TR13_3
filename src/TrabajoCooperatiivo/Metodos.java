@@ -398,8 +398,45 @@ public class Metodos {
 		return actual;
 	}
 	
-    public static void conversorEurosDolares(){
-    	fail("Not yet implemented");
+	/**
+	 * @author Sergio Junquera Suarez
+	 * @since 07/05/2024
+	 * @param La opcion para transformar la moneda
+	 */
+    public static double conversorEurosDolares(int num){
+    	
+    	switch(num) {
+    		case 1 -> {
+            	
+    			System.out.print("Introduce los euros para pasar a dolar");
+    			
+    			double resultadoEuros= entradaValoresNumericosDouble();
+    			
+    			resultadoEuros=resultadoEuros*1.08;
+    			
+    			System.out.println("="+Math.round(resultadoEuros * Math.pow(10, 2)) / Math.pow(10, 2)+"€");
+    			
+    			return Math.round(resultadoEuros * Math.pow(10, 2)) / Math.pow(10, 2);
+        	}
+    		case 2 ->{
+    			
+    			System.out.println("Introduce los dolares para pasar a euros");
+    			
+    			double resultadoDolar= entradaValoresNumericosDouble();
+    			
+    			resultadoDolar=resultadoDolar*0.92;
+    			   			     			
+    			System.out.println("="+Math.round(resultadoDolar * Math.pow(10, 2)) / Math.pow(10, 2)+"$");
+    			
+    			return Math.round(resultadoDolar * Math.pow(10, 2)) / Math.pow(10, 2);
+    		}
+    		
+
+
+    	}
+    	return -1 ;
+    	
+    	
     }
     public static void conversorEurosLibras(){
     	fail("Not yet implemented");
