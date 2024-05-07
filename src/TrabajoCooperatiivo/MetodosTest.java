@@ -16,11 +16,11 @@ class MetodosTest {
 			//Caso de prueba 2: Comprobar que -3+(-4) sea -7
 			assertEquals(-7, Suma.realizarSuma(-3, -4));
 			
-			//Suma de un número entero positivo y un número nulo
+			//Suma de un nï¿½mero entero positivo y un nï¿½mero nulo
 			//Caso de prueba 3: Comprobar que 4+0 sea 4
 			assertEquals(4, Suma.realizarSuma(0, 4));
 			
-			//Suma de un número entero negativo y un número nulo
+			//Suma de un nï¿½mero entero negativo y un nï¿½mero nulo
 			//Caso de prueba 3: Comprobar que -2+0 sea -2
 			assertEquals(-2, Suma.realizarSuma(0, -2));
 		}
@@ -62,7 +62,11 @@ class MetodosTest {
 
 	@Test
 	void testCalcularAreaTriangulo() {
-		fail("Not yet implemented");
+		
+        // Caso de prueba 1: Base y altura mayores o iguales a 1
+        double resultadoEsperado = 10.0; // Ãrea esperada para base=5 y altura=4
+        assertEquals(resultadoEsperado, Metodos.calcularAreaTriangulo(5, 4), "El Ã¡rea del triÃ¡ngulo con base=5 y altura=4 deberÃ­a ser " + resultadoEsperado);
+
 	}
 	
 	@Test

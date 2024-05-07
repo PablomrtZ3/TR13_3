@@ -74,7 +74,7 @@ public class MenuOpciones {
                 }
                 case 7 -> {
                     //NICO HERRERO
-                    //calcularAreaTriangulo();
+                    Metodos.calcularAreaTriangulo(Metodos.entradaValoresNumericosMin(1),Metodos.entradaValoresNumericosMin(1));
                     break;
                 }
                 case 8 -> {

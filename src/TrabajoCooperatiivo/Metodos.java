@@ -130,8 +130,8 @@ public class Metodos {
     
     /**
 	 * @author Ainara Barrero
-	 * @param num1 Recibe un n�mero por par�metro al cual se le va a sumar el siguiente
-	 * @param num2 Recibe otro n�mero por par�metro el cual se va a sumar al anterior
+	 * @param num1 Recibe un n�mero por par�metro al cual se le va a sumar el siguiente
+	 * @param num2 Recibe otro n�mero por par�metro el cual se va a sumar al anterior
 	 * @return Devuelve el resultado de la suma
 	 */
 	public static int realizarSuma (int num1,int num2) {
@@ -181,10 +181,19 @@ public class Metodos {
     return resultado;
     }
     
-    public static void calcularAreaTriangulo(){
-    	fail("Not yet implemented");
-    }
-    
+    /**
+     * @author Nicolás Herrero Suárez
+     * @since 07/05/2024
+     * @param base La base del triángulo
+     * @param altura La altura del triángulo
+     * @return El área del triángulo
+     */
+     public static int calcularAreaTriangulo(int base, int altura){
+
+         return (base * altura) / 2;
+     	
+     }
+
     /**
 	 * Este método nos calcula el área del círculo a partir del radio del círculo, 
 	 * una vez hechos los cálculos nos devuelve el área 
