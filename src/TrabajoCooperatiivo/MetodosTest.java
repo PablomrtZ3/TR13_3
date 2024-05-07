@@ -8,9 +8,23 @@ import org.junit.jupiter.api.Test;
 class MetodosTest {
 	@Test
 	void testRealizarSuma() {
-		fail("Not yet implemented");
-	}
-
+			//Suma de enteros positivos
+			//Caso de prueba 1: Comprobar que 5+1 sea 6
+			assertEquals(6, Suma.realizarSuma(5, 1));
+			
+			//Suma de enteros negativos
+			//Caso de prueba 2: Comprobar que -3+(-4) sea -7
+			assertEquals(-7, Suma.realizarSuma(-3, -4));
+			
+			//Suma de un número entero positivo y un número nulo
+			//Caso de prueba 3: Comprobar que 4+0 sea 4
+			assertEquals(4, Suma.realizarSuma(0, 4));
+			
+			//Suma de un número entero negativo y un número nulo
+			//Caso de prueba 3: Comprobar que -2+0 sea -2
+			assertEquals(-2, Suma.realizarSuma(0, -2));
+		}
+	
 	@Test
 	void testRealizarResta() {
 		fail("Not yet implemented");

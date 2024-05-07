@@ -127,9 +127,19 @@ public class Metodos {
             } while (!valorCorrecto);
         return opcion;
     }
-    public static void realizarSuma(){
-    	fail("Not yet implemented");
+    
+    /**
+	 * @author Ainara Barrero
+	 * @param num1 Recibe un número por parámetro al cual se le va a sumar el siguiente
+	 * @param num2 Recibe otro número por parámetro el cual se va a sumar al anterior
+	 * @return Devuelve el resultado de la suma
+	 */
+	public static int realizarSuma (int num1,int num2) {
+		int resultado = num1 + num2;
+		return resultado;
+	
     }
+	
     public static void realizarResta(){
     	fail("Not yet implemented");
     }
