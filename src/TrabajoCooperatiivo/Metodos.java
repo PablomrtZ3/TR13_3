@@ -136,9 +136,23 @@ public class Metodos {
     public static void realizarMultiplicacion(){
     	fail("Not yet implemented");
     }
-    public static void realizarDivision(){
-    	fail("Not yet implemented");
+    /**
+    * @author Roberto Morilla Buitrago
+    * @since 7/05/2023
+    * @param num1 Recibe un primer número que da el usuario y lo pasa por parámetro
+    * @param num2 Recibe un segundo número que da el usuario y lo pasa por parámetro
+    * @return Devuelve el resultado de dicha division.
+    */
+    public static double realizarDivision(double num1, double num2){
+    //Este código se encarga de hacer la división entre dos números dados por un usuario
+    if (num2==0) {
+    System.out.println("No puede hacerse una division entre 0");
     }
+    double resultado = num1 / num2;
+    System.out.println("La división es " + num1 + " / " + num2 + " = " + resultado);
+    return resultado;
+    }
+    
     public static void calcularAreaTriangulo(){
     	fail("Not yet implemented");
     }
@@ -164,8 +178,29 @@ public class Metodos {
         return factorial;
     	
     }
-    public static void calcularPotencia(){
-    	fail("Not yet implemented");
+    /**
+    * @author Roberto Morilla Buitrago
+    * @since 7/05/2023
+    * @param base Recibe un primer número que da el usuario y lo pasa por parámetro
+    * @param exponente Recibe un segundo número que da el usuario y lo pasa por parámetro
+    * @return Devuelve el resultado de dicho número al ser multiplicado tantas veces como el exponente indica.
+    */
+    public static int calcularPotencia(int base, int exponente){
+
+    //Este método se encarga de realizar la potencia de un número. Dichos números se pasarán por parámetros
+
+    int resultado = calcularPotencia(base, exponente);
+
+    System.out.println("El resultado de " + base + "^" + exponente + " es: " + resultado);
+    resultado = 1;
+    for (int i = 0; i < exponente; i++) {
+    resultado *= base;
+    }
+
+    System.out.println("El resultado es: " + resultado);
+
+    return resultado;
+
     }
     /**
      * @author Noé Suárez Rodríguez
