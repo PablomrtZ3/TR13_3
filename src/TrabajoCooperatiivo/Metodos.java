@@ -133,8 +133,26 @@ public class Metodos {
     public static void realizarResta(){
     	fail("Not yet implemented");
     }
-    public static void realizarMultiplicacion(){
-    	fail("Not yet implemented");
+    /**
+	 * Este método nos multiplica dos numeros pasados como parámetro y nos retorna 
+	 * el resultado de la multiplicación de ambos
+	 * El resultado de la multiplicación se saca a partir de sumas sucesivas 
+	 * @author Mauro
+	 * @since 04/05/2024
+	 * @param num1 Primer numero que queremos multiplicar
+	 * @param num2 Segundo número que queremos multiplicar
+	 * @return Este método nos devuelve la multiplicación de los dos parametros
+	 */
+    public static int realizarMultiplicacion(int num1, int num2){
+    	 int resultado = 0;
+
+	     for (int i = 0; i < num2; i++) {
+	    	 resultado = resultado + num1;
+	     }
+	     
+	     System.out.println("El resultado de la multiplicación de: "+num1+" x "+num2+" = "+resultado);
+	     
+	     return resultado;
     }
     /**
     * @author Roberto Morilla Buitrago
@@ -155,6 +173,28 @@ public class Metodos {
     
     public static void calcularAreaTriangulo(){
     	fail("Not yet implemented");
+    }
+    
+    /**
+	 * Este método nos calcula el área del círculo a partir del radio del círculo, 
+	 * una vez hechos los cálculos nos devuelve el área 
+	 * @author Mauro
+	 * @since 04/05/2024
+	 * @param radio Para saber el area de un circulo se necesita el radio del circulo que es la mitad del diámetro
+	 * @return Este método nos devuleve un float con el área del círculo 
+	 */
+	public static double calcularAreaCirculo(int radio){
+		
+        double area = 0;
+        
+        final double pi = 3.1415;
+        
+        area = pi*radio*radio;
+        
+        System.out.println("El área del círculo con el radio: "+radio+" es: "+area);
+        
+        return area;
+        
     }
     
     /**

@@ -18,7 +18,9 @@ class MetodosTest {
 
 	@Test
 	void testRealizarMultiplicacion() {
-		fail("Not yet implemented");
+		int valor_esperado = 6;
+		int resultado = Metodos.realizarMultiplicacion(2,3);
+		assertEquals(valor_esperado, resultado,"La multiplicación de 2x3 debe de ser 6");
 	}
 
 	@Test
@@ -29,6 +31,13 @@ class MetodosTest {
 	@Test
 	void testCalcularAreaTriangulo() {
 		fail("Not yet implemented");
+	}
+	
+	@Test
+	void testCalcularAreaCirculo() {
+		float valor_esperado = 31415;
+		double resultado = Metodos.calcularAreaCirculo(100);
+		assertEquals(valor_esperado,resultado,"El area del circulo con radio 10 debe de ser 31415");
 	}
 
 	@Test

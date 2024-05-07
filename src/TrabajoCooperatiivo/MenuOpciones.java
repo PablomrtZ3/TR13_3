@@ -54,7 +54,7 @@ public class MenuOpciones {
                 }
                 case 3 -> {
                     //MAURO
-                    //realizarMultiplicacion();
+                	Metodos.realizarMultiplicacion(Metodos.entradaValoresNumericos(), Metodos.entradaValoresNumericos());
                     break;
                 }
                 case 4 -> {
@@ -69,7 +69,7 @@ public class MenuOpciones {
                 }
                 case 6 -> {
                     //MAURO
-                    //calcularAreaCirculo();
+                    Metodos.calcularAreaCirculo(Metodos.entradaValoresNumericosMin(1));
                     break;
                 }
                 case 7 -> {
