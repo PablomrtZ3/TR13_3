@@ -134,7 +134,7 @@ public class MenuOpciones {
                 }
                 case 19 -> {
                     //JOSE
-                    //conversorEurosLibras();
+                	Metodos.conversorEurosLibras();
                     break;
                 }
                 case 20 -> {

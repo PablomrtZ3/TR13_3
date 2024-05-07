@@ -165,7 +165,7 @@ class MetodosTest {
 
 	@Test
 	void testConversorEurosLibras() {
-		fail("Not yet implemented");
+		Metodos.conversorEurosLibras();
 	}
 
 }

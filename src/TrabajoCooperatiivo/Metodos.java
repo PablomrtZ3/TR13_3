@@ -438,8 +438,58 @@ public class Metodos {
     	
     	
     }
+    
+    /*
+     * @author Jose Antonio Alvarez Luna
+     * @since 07/05/2024
+     */
     public static void conversorEurosLibras(){
-    	fail("Not yet implemented");
+    	Scanner teclado=new Scanner(System.in);
+        double valorO;
+        double resultado=0;
+        int opcion;
+        boolean opcionCorrecta=false;
+        
+        while(!opcionCorrecta){
+            System.out.println("Introduzca 1 para pasar de euros a libras o 2 para pasar de libras a euros");
+            opcion=teclado.nextInt();
+            teclado.nextLine();
+            
+            switch(opcion){
+                case 1:
+                	try {
+                		System.out.println("introduzca un valor en euros");
+                        valorO=teclado.nextDouble();
+                        
+                        opcionCorrecta=true;
+                        resultado=valorO*0.8562033;
+                        System.out.println(valorO+" euros --> "+resultado+" libras");
+                	}
+                	catch(Exception e) {
+                		System.out.println("Error el valor tiene que ser numerico");
+                	}
+                    
+                    break;
+                case 2:
+                	try {
+                		System.out.println("introduzca el valor en libras");
+                        valorO=teclado.nextDouble();
+                        
+                        opcionCorrecta=true;
+                        resultado=valorO*1.1670469;
+                        System.out.println(valorO+" libras --> "+resultado+" euros");
+                	}
+                	catch(Exception e) {
+                		System.out.println("Error el valor tiene que ser numerico");
+                	}
+                    
+                    break;
+                default:
+                    System.out.println("Error. Valor incorrecto");
+                    break;
+            }
+        }
+        teclado.close();
     }
 }
 
