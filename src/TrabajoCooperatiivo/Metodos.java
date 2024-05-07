@@ -294,10 +294,8 @@ public class Metodos {
     	double num2 = 0;
         do {
             try {
-                Scanner teclado = new Scanner(System.in);
-                
-
-                 num = entrada;
+		System.out.println("Introduce un numero para cambiarlo a ºC");
+                 num = entradaValoresNumericosDouble();
 
                  num2 = (num - 32) * 5 / 9; 
 
