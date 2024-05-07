@@ -59,7 +59,7 @@ public class MenuOpciones {
                 }
                 case 4 -> {
                     //ROBERTO
-                    //realizarDivision();
+                    Metodos.realizarDivision(Metodos.entradaValoresNumericosDouble(),Metodos.entradaValoresNumericosDouble());
                     break;
                 }
                 case 5 -> {
@@ -84,7 +84,7 @@ public class MenuOpciones {
                 }
                 case 9 -> {
                     //ROBERTO
-                    //calcularPotencia();
+                    Metodos.calcularPotencia(Metodos.entradaValoresNumericos(), Metodos.entradaValoresNumericos());
                     break;
                 }
                 case 10 -> {
@@ -114,12 +114,12 @@ public class MenuOpciones {
                 }
                 case 15 -> {
                     //MOISES
-                   Metodos.convertirCelsiusAFahrenheit();
+                   Metodos.convertirCelsiusAFahrenheit(Metodos.entradaValoresNumericosDouble());
                     break;
                 }
                 case 16 -> {
                     //CHRISTIAN
-                    Metodos.convertirFahrenheitACelsius();
+                    Metodos.convertirFahrenheitACelsius(Metodos.entradaValoresNumericosDouble());
                     break;
                 }
                 case 17 -> {

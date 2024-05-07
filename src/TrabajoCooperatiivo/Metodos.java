@@ -358,12 +358,10 @@ public class Metodos {
      * @param Grados celsius 
      * @since 06/05/2024
      */
-    public static void convertirCelsiusAFahrenheit(){
+    public static void convertirCelsiusAFahrenheit(double gradosCelsius){
     	   Scanner scanner = new Scanner(System.in);
 
            // Pedimos que introduzca los grados a convertir
-           System.out.print("Introduce los grados Celsius: ");
-           double gradosCelsius = scanner.nextDouble();
            double gradosFahrenheit = (gradosCelsius * 9 / 5) + 32;
 
            System.out.println(gradosCelsius + " grados Celsius son equivalentes a " + gradosFahrenheit + " grados Fahrenheit.");
