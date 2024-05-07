@@ -119,8 +119,7 @@ public class MenuOpciones {
                 }
                 case 16 -> {
                     //CHRISTIAN
-                	System.out.println("Escriba un número en grados Fahrenheit para pasarlo a Celsius");
-                    Metodos.convertirFahrenheitACelsius(teclado.nextDouble());
+                    Metodos.convertirFahrenheitACelsius();
                     break;
                 }
                 case 17 -> {
