@@ -317,6 +317,22 @@ public class Metodos {
             System.out.println("El numero "+numero+" no es primo ya que es divisible al menos por "+divisor);
         }
     }
+    public static void verificarNumeroPrimoT(int valor){
+        int numero = valor;
+	if (valor<=1){
+		return false;
+	}
+        for (int i = numero-1; i > 0; i--) {       
+            if ((numero%i)==0) {
+		if (i!=1) { 
+                    return false;
+                    divisor = i;
+                    i=0;   
+                }
+            }
+        }
+	return true;
+    }
     /**
      * Calcula el MCM utilizando el cociente del producto de ambos valores por su MCD.
      * @author Francisco Sierra Ares
