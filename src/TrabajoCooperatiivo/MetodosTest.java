@@ -31,7 +31,7 @@ class MetodosTest {
 	}
 	
 	@Test
-	void testareaTriangulo() {
+	void testRealizarRectangulo() {
 		 // Definir los valores de prueba
 	    double base = 5.0;
 	    double altura = 4.0;
