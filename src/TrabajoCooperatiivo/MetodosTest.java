@@ -149,7 +149,11 @@ class MetodosTest {
 
 	@Test
 	void testVerificarNumeroPrimo() {
-		fail("Not yet implemented");
+	int NUMERO_PRIMO = 17; // Un número que sabemos que es primo
+	int NUMERO_NO_PRIMO = 18; // Un número que sabemos que no es primo
+	    
+	assertTrue("El número debería ser primo", Metodos.verificarNumeroPrimoT(NUMERO_PRIMO));	    	
+	assertFalse("El número no debería ser primo", Metodos.verificarNumeroPrimoT(NUMERO_NO_PRIMO));
 	}
 
 	@Test
