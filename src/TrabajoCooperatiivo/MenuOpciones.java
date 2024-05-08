@@ -44,7 +44,7 @@ public class MenuOpciones {
             switch (opcion) {
                 case 1 -> {
                     //AINARA
-                    //realizarSuma();
+                    metodos.realizarSuma();
                     break;
                 }
                 case 2 -> {
@@ -64,7 +64,7 @@ public class MenuOpciones {
                 }
                 case 5 -> {
                     //CLAUDIA
-                    //calcularAreaRectangulo();
+                    metodos.calcularAreaRectangulo(Metodos.entradaValoresNumericos(),Metodos.entradaValoresNumericos());
                     break;
                 }
                 case 6 -> {
