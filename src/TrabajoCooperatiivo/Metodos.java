@@ -139,9 +139,16 @@ public class Metodos {
 		return resultado;
 	
     }
-	
+	/**
+	 * @author Alejandro
+	 */
     public static void realizarResta(){
-    	fail("Not yet implemented");
+    	System.out.println("Ingrese el primer numero")
+    	int numero1 = entradaValoresNumericos();
+    	System.out.println("Ingrese el segundo numero")
+    	int numero2 = entradaValoresNumericos();
+    	int resultado = numero1-numero2;
+    	System.out.println("El resultado es "+resultado)
     }
     /**
 	 * Este método nos multiplica dos numeros pasados como parámetro y nos retorna 
@@ -189,8 +196,9 @@ public class Metodos {
      * @return El área del triángulo
      */
      public static int calcularAreaTriangulo(int base, int altura){
-
-         return (base * altura) / 2;
+    	 int result = (base * altura) / 2;
+    	 System.out.println("EL resultado del area del triangulo dado es "+result);
+         return result;
      	
      }
 
@@ -243,7 +251,7 @@ public class Metodos {
      * @param altura se pasa por parametro la altura del rectangulo
      * @return devuelve el area del rectangulo
      */
-	public double calcularAreaRectangulo(double base , double altura) {
+	public static double calcularAreaRectangulo(double base , double altura) {
 		double area=base*altura;
 		return area;
 	}
@@ -320,17 +328,15 @@ public class Metodos {
             System.out.println("El numero "+numero+" no es primo ya que es divisible al menos por "+divisor);
         }
     }
-    public static void verificarNumeroPrimoT(int valor){
+    public static boolean verificarNumeroPrimoT(int valor){
         int numero = valor;
 	if (valor<=1){
 		return false;
 	}
         for (int i = numero-1; i > 0; i--) {       
             if ((numero%i)==0) {
-		if (i!=1) { 
-                    return false;
-                    divisor = i;
-                    i=0;   
+            	if (i!=1) { 
+                    return false;   
                 }
             }
         }
@@ -440,7 +446,7 @@ public class Metodos {
                 
                 System.out.println("¿Desea cambiar otro número? (Escriba 1 para continuar, 2 para terminar)");
 
-                int opcion = teclado.nextInt();
+                int opcion = entradaValoresNumericos(1, 2);
 
                 if (opcion == 2) {
                     System.out.println("¡Muchas gracias por su tiempo! ¡Vuelva pronto!");
