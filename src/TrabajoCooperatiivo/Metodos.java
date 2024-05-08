@@ -302,12 +302,12 @@ public class Metodos {
         boolean primo=true;
         System.out.println("VERIFICACION DE NUMERO PRIMO");
         numero = entradaValoresNumericosMin(1);
-        for (int i = numero-1; i > 0; i--) {
-            if (i!=1) {
-                if ((numero%i)==0) {
+        for (int i = numero-1; i > 0; i--) {       
+            if ((numero%i)==0) {
+		if (i!=1) { 
                     primo=false;
                     divisor = i;
-                    i=0;
+                    i=0;   
                 }
             }
         }
