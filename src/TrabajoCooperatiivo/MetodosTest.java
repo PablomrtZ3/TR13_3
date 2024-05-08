@@ -57,7 +57,24 @@ class MetodosTest {
 
 	@Test
 	void testRealizarDivision() {
-		fail("Not yet implemented");
+		//Division entre num1>num2
+		double valorEsperado = 2;
+		double num1 = 10;
+		double num2 = 5;
+		assertEquals(valorEsperado, 2, "Deberia devolver un 2");
+		
+		//Division entre num2>num1
+		
+		valorEsperado = 0.5;
+		num1= 5;
+		num2=10;
+		assertEquals(valorEsperado,0.5,"Deberia devolver un 0.5");
+		
+		//Division entre num1=0 y num2
+		valorEsperado = 0;
+		num1= 0;
+		num2=10;
+		assertEquals(valorEsperado,0,"Deberia devolver un 0");
 	}
 
 	@Test
@@ -85,7 +102,35 @@ class MetodosTest {
 
 	@Test
 	void testCalcularPotencia() {
-		fail("Not yet implemented");
+		//Número elevado a 0
+		int valorEsperado=1;
+		int base=2;
+		int exponente=0;
+		assertEquals(valorEsperado,1,"Deberia devolver 1");
+		
+		//Número elevado a 1
+		valorEsperado=2;
+		base=2;
+		exponente=1;
+		assertEquals(valorEsperado,2,"Deberia devolver 2");
+		
+		//Número elevado a exponente grande
+		valorEsperado=4096;
+		base=2;
+		exponente=12;
+		assertEquals(valorEsperado,4096,"Deberia devolver 4096");
+		
+		//Número elevado a un exponente negativo par
+		valorEsperado=4;
+		base=2;
+		exponente=-2;
+		assertEquals(valorEsperado,4,"Deberia devolver 4");
+		
+		//Número elevado a un exponente negativo impar
+		valorEsperado=-8;
+		base=2;
+		exponente=-3;
+		assertEquals(valorEsperado,-8,"Deberia devolver -8")
 	}
 
 	@Test
